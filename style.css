@@ -1,0 +1,96 @@
+:root {
+  --bg-color: gray;
+  --text-color: white;
+  --font-size: 16px;
+  --gap: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: var(--bg-color);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  padding: 1rem;
+}
+
+.content-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.single-div {
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.single-div p {
+  margin-top: 1rem;
+  text-align: left;
+}
+.setting {
+  box-shadow: 2px 3px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 40%;
+  padding: 1rem;
+}
+.setting h1 {
+  margin: 1rem;
+}
+h3 {
+  margin-bottom: -1rem;
+}
+.setting .options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.bg-colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bg-colors span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid purple;
+  cursor: pointer;
+}
+.white {
+  background-color: white;
+}
+.gray {
+  background-color: gray;
+}
+.red {
+  background-color: red;
+}
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: blue;
+}
+.font {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.font span {
+  width: 6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+input[type="range"] {
+  width: 100%;
+}
